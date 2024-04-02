@@ -1,6 +1,6 @@
 <h2 align="center">
      ˹ᴄʜᴧᴍᴘᴜ ꭙ sᴛꝛɪɴɢ˼ </h2>
-<p align="center"><img src="https://graph.org/file/1e1f64a4476175c0fd109.jpg" width="600"></a></p>
+<p align="center"><img src="https://graph.org/file/1e1f64a4476175c0fd109.jpg" width="1000"></a></p>
 <p align="center">
 
 
