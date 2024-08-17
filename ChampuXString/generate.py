@@ -174,10 +174,10 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**ᴛʜɪs ɪs ʏᴏᴜꝛ {ty} sᴛꝛɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴᴇꝛᴧᴛᴇᴅ ʙʏ :** @TheChampu\n🍒 **ɴᴏᴛᴇ :** ᴅᴏɴᴛ sʜᴧꝛᴇ ᴡɪᴛʜ ᴧɴʏᴏɴᴇ ʙᴇᴄᴧᴜsᴇ ʜᴇ ᴄᴧɴ ʜᴧᴄᴋ ʏᴏᴜꝛ ᴧʟʟ ᴅᴧᴛᴧ. 🍑 ᴅᴏɴᴛ ғᴏꝛɢᴇᴛ ᴛᴏ ᴊᴏɪɴ @ll_Champu_ll & @TheChampuStore 🥺"
+    text = f"**ᴛʜɪs ɪs ʏᴏᴜꝛ {ty} sᴛꝛɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴᴇꝛᴧᴛᴇᴅ ʙʏ :** @TheChampu\n🍒 **ɴᴏᴛᴇ :** ᴅᴏɴᴛ sʜᴧꝛᴇ ᴡɪᴛʜ ᴧɴʏᴏɴᴇ ʙᴇᴄᴧᴜsᴇ ʜᴇ ᴄᴧɴ ʜᴧᴄᴋ ʏᴏᴜꝛ ᴧʟʟ ᴅᴧᴛᴧ. 🍑 ᴅᴏɴᴛ ғᴏꝛɢᴇᴛ ᴛᴏ ᴊᴏɪɴ @akaChampu & @TheChampu 🥺"
     try:
         if not is_bot:
-            await client.send_message("me", text)
+            await bot.send_message(msg.chat.id, text)
         else:
             await bot.send_message(msg.chat.id, text)
     except KeyError:
