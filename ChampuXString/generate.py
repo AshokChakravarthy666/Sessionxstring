@@ -177,10 +177,10 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = await client.export_session_string()
     text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[ᴄʜᴧᴍᴘᴜ](https://t.me/TheChampu) ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ 🏴‍☠️"
     try:
-        if not is_bot:
-            await bot.send_message("me", text)
-        else:
+        if msg.chat.type != "bot":
             await bot.send_message(msg.chat.id, text)
+        else:
+            await bot.send_message(msg.from_user.id, text)
     except KeyError:
         pass
     await client.disconnect()
