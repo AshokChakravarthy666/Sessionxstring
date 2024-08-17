@@ -14,11 +14,11 @@ async def start(bot: Client, msg: Message):
         chat_id=msg.chat.id,
         text=f"""ʜᴇʟʟᴏ {msg.from_user.mention},
 
-✨ ɪɴᴛꝛᴏᴅᴜᴄɪɴɢ {me2} - ᴛʜᴇ ᴇɴɪɢᴍᴧᴛɪᴄ sᴛꝛɪɴɢ ɢᴇɴᴇꝛᴧᴛᴏꝛ ʙᴏᴛ! ✨
-🔐 ᴜɴʟᴏᴄᴋ ᴛʜᴇ ᴍʏsᴛᴇꝛɪᴇs ᴏғ sᴛꝛɪɴɢ ɢᴇɴᴇꝛᴧᴛɪᴏɴ!
+✨ ɪɴᴛʀᴏᴅᴜᴄɪɴɢ {me2} - ᴛʜᴇ ᴇɴɪɢᴍᴧᴛɪᴄ sᴛʀɪɴɢ ɢᴇɴᴇʀᴧᴛᴏʀ ʙᴏᴛ! ✨
+🔐 ᴜɴʟᴏᴄᴋ ᴛʜᴇ ᴍʏsᴛᴇʀɪᴇs ᴏғ sᴛʀɪɴɢ ɢᴇɴᴇʀᴧᴛɪᴏɴ!
 🌌 sʟᴇᴇᴋ. ᴇʟᴇɢᴧɴᴛ. ᴛɪᴍᴇʟᴇss.
 
-🎨 ᴄꝛᴇᴧᴛᴇᴅ ʙʏ: [ᴄʜᴧᴍᴘᴜ](tg://user?id={OWNER_ID}) !""",
+🎨 ᴄʀᴇᴧᴛᴇᴅ ʙʏ: [ᴄʜᴧᴍᴘᴜ](tg://user?id={OWNER_ID}) !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
